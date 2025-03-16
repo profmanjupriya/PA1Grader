@@ -1,0 +1,3 @@
+C:/Users/gabel/CLionProjects/programming-assignment-1-Gabe-Littrell/cmake-build-debug/CMakeFiles/CS210PA1.dir
+C:/Users/gabel/CLionProjects/programming-assignment-1-Gabe-Littrell/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/gabel/CLionProjects/programming-assignment-1-Gabe-Littrell/cmake-build-debug/CMakeFiles/rebuild_cache.dir

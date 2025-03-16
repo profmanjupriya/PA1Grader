@@ -1,0 +1,39 @@
+Compilation Failed:
+In file included from main.cpp:3:
+./SpaceRoute.cpp:58:32: error: use of class template 'Node' requires template arguments
+   58 |         Node<T>* newNode = new Node(data);
+      |                                ^
+./SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+./SpaceRoute.cpp:72:32: error: use of class template 'Node' requires template arguments
+   72 |         Node<T>* newNode = new Node(data);
+      |                                ^
+./SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+2 errors generated.
+SpaceRoute.cpp:58:32: error: use of class template 'Node' requires template arguments
+   58 |         Node<T>* newNode = new Node(data);
+      |                                ^
+SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+SpaceRoute.cpp:72:32: error: use of class template 'Node' requires template arguments
+   72 |         Node<T>* newNode = new Node(data);
+      |                                ^
+SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+2 errors generated.
+
+README.md Present
+Final Score: 0/100

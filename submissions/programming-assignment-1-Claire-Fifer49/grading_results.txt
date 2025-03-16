@@ -1,0 +1,4 @@
+- voyager route (forward): earth mars venus jupiter saturn voyager route (backward): saturn jupiter venus mars earth printing route: earth mars venus jupiter saturn after removing venus: earth mars jupiter saturn
++ back front front back index out of range list is empty list is empty index out of range voyager route (forward): front earth mars venus jupiter saturn back voyager route (backward): back saturn jupiter venus mars earth front printing route: earth mars venus jupiter saturn after removing venus: earth mars jupiter saturn
+README.md Present
+Final Score: 90/100

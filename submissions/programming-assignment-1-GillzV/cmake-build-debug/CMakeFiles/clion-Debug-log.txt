@@ -1,0 +1,4 @@
+C:\Users\GillV\AppData\Local\JetBrains\CLion2024.3\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++.exe -G "Unix Makefiles" -S /cygdrive/c/Users/GillV/Documents/programming-assignment-1-GillzV -B /cygdrive/c/Users/GillV/Documents/programming-assignment-1-GillzV/cmake-build-debug
+CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!

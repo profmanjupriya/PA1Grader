@@ -1,0 +1,248 @@
+Compilation Failed:
+In file included from main.cpp:3:
+./SpaceRoute.cpp:41:26: error: use of class template 'Node' requires template arguments
+   41 |         T* newNode = new Node(data);
+      |                          ^
+./SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+./SpaceRoute.cpp:54:26: error: use of class template 'Node' requires template arguments
+   54 |         T* newNode = new Node(data);
+      |                          ^
+./SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+./SpaceRoute.cpp:76:57: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   76 |             while (current != nullptr && count << index - 1) {
+      |                                                ~~ ~~~~~~^~~
+./SpaceRoute.cpp:76:57: note: place parentheses around the '-' expression to silence this warning
+   76 |             while (current != nullptr && count << index - 1) {
+      |                                                         ^  
+      |                                                   (        )
+./SpaceRoute.cpp:56:27: error: incompatible pointer types assigning to 'Node<string> *' from 'std::string *'
+   56 |             head = tail = newNode;
+      |                           ^~~~~~~
+main.cpp:16:18: note: in instantiation of member function 'SpaceRoute<std::string>::addWaypointAtEnd' requested here
+   16 |     voyagerRoute.addWaypointAtEnd(mars);
+      |                  ^
+In file included from main.cpp:3:
+./SpaceRoute.cpp:43:20: error: incompatible pointer types assigning to 'Node<string> *' from 'std::string *'
+   43 |             head = newNode;
+      |                    ^~~~~~~
+main.cpp:19:18: note: in instantiation of member function 'SpaceRoute<std::string>::addWaypointAtBeginning' requested here
+   19 |     voyagerRoute.addWaypointAtBeginning(earth);
+      |                  ^
+In file included from main.cpp:3:
+./SpaceRoute.cpp:69:17: error: member reference type 'std::string' is not a pointer; did you mean to use '.'?
+   69 |             data->next = *head;
+      |             ~~~~^~
+      |                 .
+main.cpp:20:18: note: in instantiation of member function 'SpaceRoute<std::string>::addWaypointAtIndex' requested here
+   20 |     voyagerRoute.addWaypointAtIndex(2, venus);
+      |                  ^
+In file included from main.cpp:3:
+./SpaceRoute.cpp:69:19: error: no member named 'next' in 'std::string'
+   69 |             data->next = *head;
+      |             ~~~~  ^
+./SpaceRoute.cpp:6:7: error: cannot define the implicit copy assignment operator for 'Node<std::string>', because non-static reference member 'data' cannot use copy assignment operator
+    6 | class Node {
+      |       ^
+./SpaceRoute.cpp:70:19: note: in implicit copy assignment operator for 'Node<std::string>' first required here
+   70 |             *head = data;
+      |                   ^
+main.cpp:20:18: note: in instantiation of member function 'SpaceRoute<std::string>::addWaypointAtIndex' requested here
+   20 |     voyagerRoute.addWaypointAtIndex(2, venus);
+      |                  ^
+./SpaceRoute.cpp:8:8: note: declared here
+    8 |     T& data;
+      |        ^
+./SpaceRoute.cpp:83:17: error: member reference type 'std::string' is not a pointer; did you mean to use '.'?
+   83 |             data->next = current-> next;
+      |             ~~~~^~
+      |                 .
+main.cpp:20:18: note: in instantiation of member function 'SpaceRoute<std::string>::addWaypointAtIndex' requested here
+   20 |     voyagerRoute.addWaypointAtIndex(2, venus);
+      |                  ^
+In file included from main.cpp:3:
+./SpaceRoute.cpp:83:19: error: no member named 'next' in 'std::string'
+   83 |             data->next = current-> next;
+      |             ~~~~  ^
+./SpaceRoute.cpp:84:30: error: assigning to 'Node<string> *' from incompatible type 'std::string'
+   84 |             current ->next = data;
+      |                              ^~~~
+./SpaceRoute.cpp:152:12: error: cannot initialize a variable of type 'std::string *' with an lvalue of type 'Node<string> *'
+  152 |         T *current = head;
+      |            ^         ~~~~
+main.cpp:23:18: note: in instantiation of member function 'SpaceRoute<std::string>::traverseForward' requested here
+   23 |     voyagerRoute.traverseForward();
+      |                  ^
+In file included from main.cpp:3:
+./SpaceRoute.cpp:154:31: error: reference to non-static member function must be called; did you mean to call it with no arguments?
+  154 |             cout << current-> data << " ";
+      |                     ~~~~~~~~~~^~~~
+      |                                   ()
+./SpaceRoute.cpp:155:33: error: no member named 'next' in 'std::string'
+  155 |             current = current-> next;
+      |                       ~~~~~~~   ^
+./SpaceRoute.cpp:162:12: error: cannot initialize a variable of type 'std::string *' with an lvalue of type 'Node<string> *'
+  162 |         T *current = tail;
+      |            ^         ~~~~
+main.cpp:26:18: note: in instantiation of member function 'SpaceRoute<std::string>::traverseBackward' requested here
+   26 |     voyagerRoute.traverseBackward();
+      |                  ^
+In file included from main.cpp:3:
+./SpaceRoute.cpp:164:31: error: reference to non-static member function must be called; did you mean to call it with no arguments?
+  164 |             cout << current-> data << " ";
+      |                     ~~~~~~~~~~^~~~
+      |                                   ()
+./SpaceRoute.cpp:165:33: error: no member named 'prev' in 'std::string'
+  165 |             current = current-> prev;
+      |                       ~~~~~~~   ^
+./SpaceRoute.cpp:122:19: error: invalid operands to binary expression ('Node<string>' and 'std::nullptr_t')
+  122 |         if (*head == nullptr) {
+      |             ~~~~~ ^  ~~~~~~~
+main.cpp:31:18: note: in instantiation of member function 'SpaceRoute<std::string>::removeWaypointAtIndex' requested here
+   31 |     voyagerRoute.removeWaypointAtIndex(2);
+      |                  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h:78:35: note: candidate function not viable: no known conversion from 'Node<string>' to '__thread_id' for 1st argument
+   78 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(__thread_id __x, __thread_id __y) _NOEXCEPT {
+      |                                   ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_condition.h:96:35: note: candidate function not viable: no known conversion from 'Node<string>' to 'const error_condition' for 1st argument
+   96 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const error_condition& __x, const error_condition& __y) _NOEXCEPT {
+      |                                   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h:92:35: note: candidate function not viable: no known conversion from 'Node<string>' to 'const error_code' for 1st argument
+   92 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const error_code& __x, const error_code& __y) _NOEXCEPT {
+      |                                   ^          ~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h:96:35: note: candidate function not viable: no known conversion from 'Node<string>' to 'const error_code' for 1st argument
+   96 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const error_code& __x, const error_condition& __y) _NOEXCEPT {
+      |                                   ^          ~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h:101:35: note: candidate function not viable: no known conversion from 'Node<string>' to 'const error_condition' for 1st argument
+  101 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const error_condition& __x, const error_code& __y) _NOEXCEPT {
+      |                                   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h:65:35: note: candidate template ignored: could not match 'fpos' against 'Node'
+   65 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const fpos<_StateT>& __x, const fpos<_StateT>& __y) {
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator.h:259:1: note: candidate template ignored: could not match 'allocator' against 'Node'
+  259 | operator==(const allocator<_Tp>&, const allocator<_Up>&) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/pair.h:515:1: note: candidate template ignored: could not match 'pair' against 'Node'
+  515 | operator==(const pair<_T1, _T2>& __x, const pair<_U1, _U2>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h:207:1: note: candidate template ignored: could not match 'reverse_iterator' against 'Node'
+  207 | operator==(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:459:1: note: candidate template ignored: could not match 'unique_ptr' against 'Node'
+  459 | operator==(const unique_ptr<_T1, _D1>& __x, const unique_ptr<_T2, _D2>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:505:1: note: candidate template ignored: could not match 'unique_ptr' against 'Node'
+  505 | operator==(const unique_ptr<_T1, _D1>& __x, nullptr_t) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:511:35: note: candidate template ignored: could not match 'unique_ptr<_T1, _D1>' against 'std::nullptr_t'
+  511 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(nullptr_t, const unique_ptr<_T1, _D1>& __x) _NOEXCEPT {
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1103:35: note: candidate template ignored: could not match 'shared_ptr' against 'Node'
+ 1103 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const shared_ptr<_Tp>& __x, const shared_ptr<_Up>& __y) _NOEXCEPT {
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1149:35: note: candidate template ignored: could not match 'shared_ptr' against 'Node'
+ 1149 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const shared_ptr<_Tp>& __x, nullptr_t) _NOEXCEPT {
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1156:35: note: candidate template ignored: could not match 'shared_ptr<_Tp>' against 'std::nullptr_t'
+ 1156 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(nullptr_t, const shared_ptr<_Tp>& __x) _NOEXCEPT {
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:108:1: note: candidate template ignored: could not match '__wrap_iter' against 'Node'
+  108 | operator==(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter1>& __y) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:114:1: note: candidate template ignored: could not match '__wrap_iter' against 'Node'
+  114 | operator==(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:730:1: note: candidate template ignored: could not match 'basic_string_view' against 'Node'
+  730 | operator==(basic_string_view<_CharT, _Traits> __lhs, basic_string_view<_CharT, _Traits> __rhs) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:740:1: note: candidate template ignored: could not match 'basic_string_view' against 'Node'
+  740 | operator==(basic_string_view<_CharT, _Traits> __lhs,
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:749:1: note: candidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'std::nullptr_t'
+  749 | operator==(__type_identity_t<basic_string_view<_CharT, _Traits> > __lhs,
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/istream_iterator.h:86:35: note: candidate template ignored: could not match 'istream_iterator' against 'Node'
+   86 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const istream_iterator<_Tp, _CharT, _Traits, _Distance>& __x,
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/istreambuf_iterator.h:95:1: note: candidate template ignored: could not match 'istreambuf_iterator' against 'Node'
+   95 | operator==(const istreambuf_iterator<_CharT, _Traits>& __a, const istreambuf_iterator<_CharT, _Traits>& __b) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h:256:1: note: candidate template ignored: could not match 'move_iterator' against 'Node'
+  256 | operator==(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:3691:1: note: candidate template ignored: could not match 'basic_string' against 'Node'
+ 3691 | operator==(const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:3703:1: note: candidate template ignored: could not match 'basic_string' against 'Node'
+ 3703 | operator==(const basic_string<char, char_traits<char>, _Allocator>& __lhs,
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:3721:1: note: candidate template ignored: could not match 'const _CharT *' against 'Node<string>'
+ 3721 | operator==(const _CharT* __lhs, const basic_string<_CharT, _Traits, _Allocator>& __rhs) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:3733:1: note: candidate template ignored: could not match 'basic_string' against 'Node'
+ 3733 | operator==(const basic_string<_CharT, _Traits, _Allocator>& __lhs, const _CharT* __rhs) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque:2509:35: note: candidate template ignored: could not match 'deque' against 'Node'
+ 2509 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const deque<_Tp, _Allocator>& __x, const deque<_Tp, _Allocator>& __y) {
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array:384:1: note: candidate template ignored: could not match 'array' against 'Node'
+  384 | operator==(const array<_Tp, _Size>& __x, const array<_Tp, _Size>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map:1812:28: note: candidate template ignored: could not match 'unordered_map' against 'Node'
+ 1812 | _LIBCPP_HIDE_FROM_ABI bool operator==(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+      |                            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map:2507:28: note: candidate template ignored: could not match 'unordered_multimap' against 'Node'
+ 2507 | _LIBCPP_HIDE_FROM_ABI bool operator==(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+      |                            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector:2861:1: note: candidate template ignored: could not match 'vector' against 'Node'
+ 2861 | operator==(const vector<_Tp, _Allocator>& __x, const vector<_Tp, _Allocator>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue:469:35: note: candidate template ignored: could not match 'queue' against 'Node'
+  469 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const queue<_Tp, _Container>& __x, const queue<_Tp, _Container>& __y) {
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack:320:35: note: candidate template ignored: could not match 'stack' against 'Node'
+  320 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const stack<_Tp, _Container>& __x, const stack<_Tp, _Container>& __y) {
+      |                                   ^
+In file included from main.cpp:3:
+./SpaceRoute.cpp:133:12: error: cannot initialize a variable of type 'std::string *' with an lvalue of type 'Node<string> *'
+  133 |         T *current = head;
+      |            ^         ~~~~
+./SpaceRoute.cpp:139:33: error: no member named 'next' in 'std::string'
+  139 |             current = current-> next;
+      |                       ~~~~~~~   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.
+SpaceRoute.cpp:41:26: error: use of class template 'Node' requires template arguments
+   41 |         T* newNode = new Node(data);
+      |                          ^
+SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+SpaceRoute.cpp:54:26: error: use of class template 'Node' requires template arguments
+   54 |         T* newNode = new Node(data);
+      |                          ^
+SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+SpaceRoute.cpp:76:57: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   76 |             while (current != nullptr && count << index - 1) {
+      |                                                ~~ ~~~~~~^~~
+SpaceRoute.cpp:76:57: note: place parentheses around the '-' expression to silence this warning
+   76 |             while (current != nullptr && count << index - 1) {
+      |                                                         ^  
+      |                                                   (        )
+1 warning and 2 errors generated.
+
+README.md Present
+Final Score: 0/100

@@ -1,0 +1,3 @@
+/Users/sean_lumahan/CLionProjects/programming-assignment-1-slumahan06/cmake-build-debug/CMakeFiles/CS210PA1.dir
+/Users/sean_lumahan/CLionProjects/programming-assignment-1-slumahan06/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sean_lumahan/CLionProjects/programming-assignment-1-slumahan06/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,4 @@
+- voyager route (forward): earth mars venus jupiter saturn voyager route (backward): saturn jupiter venus mars earth printing route: earth mars venus jupiter saturn after removing venus: earth mars jupiter saturn
++ voyager route (forward): waypoints from first to last: earth - mars - venus - jupiter - saturn - voyager route (backward): waypoints from last to first: saturn - jupiter - venus - mars - earth - printing route: space route: earth mars venus jupiter saturn after removing venus: space route: earth mars jupiter saturn
+README.md Present
+Final Score: 90/100

@@ -1,0 +1,11 @@
+Voyager Route (Forward):
+Earth -> Mars -> Venus -> Jupiter -> Saturn
+
+Voyager Route (Backward):
+Saturn -> Jupiter -> Venus -> Mars -> Earth
+
+Printing Route:
+Earth -> Mars -> Venus -> Jupiter -> Saturn
+
+After Removing Venus:
+Earth -> Mars -> Jupiter -> Saturn

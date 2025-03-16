@@ -1,0 +1,55 @@
+Compilation Failed:
+In file included from main.cpp:3:
+./SpaceRoute.cpp:54:32: error: use of class template 'Node' requires template arguments
+   54 |         Node<T> *newNode = new Node(data);
+      |                                ^
+./SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+./SpaceRoute.cpp:69:32: error: use of class template 'Node' requires template arguments
+   69 |         Node<T> *newNode = new Node(data);
+      |                                ^
+./SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+./SpaceRoute.cpp:91:36: error: use of class template 'Node' requires template arguments
+   91 |             Node<T> *newNode = new Node(data);
+      |                                    ^
+./SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+3 errors generated.
+SpaceRoute.cpp:54:32: error: use of class template 'Node' requires template arguments
+   54 |         Node<T> *newNode = new Node(data);
+      |                                ^
+SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+SpaceRoute.cpp:69:32: error: use of class template 'Node' requires template arguments
+   69 |         Node<T> *newNode = new Node(data);
+      |                                ^
+SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+SpaceRoute.cpp:91:36: error: use of class template 'Node' requires template arguments
+   91 |             Node<T> *newNode = new Node(data);
+      |                                    ^
+SpaceRoute.cpp:6:7: note: template is declared here
+    5 | template <typename T>
+      | ~~~~~~~~~~~~~~~~~~~~~
+    6 | class Node {
+      |       ^
+3 errors generated.
+
+README.md Present
+Final Score: 0/100

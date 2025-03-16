@@ -1,0 +1,3 @@
+/home/priyesh/CLionProjects/CS210/programming-assignment-1-PriyeshSDS/cmake-build-debug/CMakeFiles/CS210PA1.dir
+/home/priyesh/CLionProjects/CS210/programming-assignment-1-PriyeshSDS/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/priyesh/CLionProjects/CS210/programming-assignment-1-PriyeshSDS/cmake-build-debug/CMakeFiles/rebuild_cache.dir

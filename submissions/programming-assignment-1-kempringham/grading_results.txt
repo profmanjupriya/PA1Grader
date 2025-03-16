@@ -1,0 +1,4 @@
+- voyager route (forward): earth mars venus jupiter saturn voyager route (backward): saturn jupiter venus mars earth printing route: earth mars venus jupiter saturn after removing venus: earth mars jupiter saturn
++ voyager route (forward): earth mars venus jupiter saturn voyager route (backward): saturn jupiter venus mars earth printing route: earth mars venus jupiter saturn after removing venus: earth mars jupiter saturn after removing last waypoint: earth mars jupiter after removing first waypoint: mars jupiter replacing index one with venus: mars mercury getting index one: mercury
+README.md Present
+Final Score: 90/100

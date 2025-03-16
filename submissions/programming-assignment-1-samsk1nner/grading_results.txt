@@ -1,0 +1,4 @@
+- voyager route (forward): earth mars venus jupiter saturn voyager route (backward): saturn jupiter venus mars earth printing route: earth mars venus jupiter saturn after removing venus: earth mars jupiter saturn
++ adding waypoint at mars, voyager 210's current planet. adding waypoint at jupiter, voyager 210's current planet. adding waypoint at saturn, voyager 210's current planet. waypoint added at earth, marking the beginning of the mission. waypoint has been inserted into the journey at venus voyager route (forward): earth mars venus jupiter saturn voyager route (backward): saturn jupiter venus mars earth printing route: earth mars venus jupiter saturn removing waypoint at venus after removing venus: earth mars jupiter saturn after removing earth mars jupiter saturn after removing saturn mars jupiter
+README.md Present
+Final Score: 90/100

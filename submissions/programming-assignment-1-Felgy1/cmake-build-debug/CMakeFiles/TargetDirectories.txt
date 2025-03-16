@@ -1,0 +1,3 @@
+C:/Users/josej/CLionProjects/DataStructures/programming-assignment-1-Felgy1/cmake-build-debug/CMakeFiles/CS210PA1.dir
+C:/Users/josej/CLionProjects/DataStructures/programming-assignment-1-Felgy1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/josej/CLionProjects/DataStructures/programming-assignment-1-Felgy1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
